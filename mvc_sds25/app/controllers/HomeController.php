@@ -3,7 +3,7 @@ namespace app\controllers;
 
 class HomeController {
     public function index() {
-        $data = ["title" => "Pagina Principal", "descripcion" => "Este blog contiene todas las actividades realizadas durante la SDS25"];
+        $data = ["title" => "Pagina Principal", "descripcion" => "Este blog contiene las actividades realizadas durante la sds25"];
         return $this->view("home", $data);
     }
 

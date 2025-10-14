@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: php82-apache_sds
+    container_name: php82-apache_blog
     ports:
       - "8080:80"           # App en http://localhost:8080
     volumes:
@@ -18,7 +18,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: mysql_sds
+    container_name: mysql_blog
     environment:
       MYSQL_ROOT_PASSWORD: rootpass # es el usuario que tiene todos los permisos (se puede cambiar)
       MYSQL_DATABASE: appdb #cre auna base de datos llamada appdb
@@ -38,7 +38,7 @@ services:
 
   phpmyadmin: # Servicio opcional para administrar MySQL visualmente
     image: phpmyadmin:latest
-    container_name: phpmyadmin_sds
+    container_name: phpmyadmin_blog
     depends_on:
       db:
         condition: service_healthy
