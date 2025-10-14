@@ -1,0 +1,54 @@
+version: "3.9"
+
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php82-apache_sds
+    ports:
+      - "8080:80"           # App en http://localhost:8080
+    volumes:
+      - .:/var/www/html # Tu código local en ./src
+    depends_on:
+      db:
+        condition: service_healthy
+
+
+  db:
+    image: mysql:8.0
+    container_name: mysql_sds
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass # es el usuario que tiene todos los permisos (se puede cambiar)
+      MYSQL_DATABASE: appdb #cre auna base de datos llamada appdb
+      MYSQL_USER: appuser #crea un usuario llamado appuser
+      MYSQL_PASSWORD: apppass #usuaruo y contraseña para la base de datos
+    ports:
+      - "3306:3306"         # Opcional exponerlo al host
+    volumes:
+      - db_data:/var/lib/mysql 
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -prootpass || exit 1"] # Verifica si MySQL está listo
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+
+  phpmyadmin: # Servicio opcional para administrar MySQL visualmente
+    image: phpmyadmin:latest
+    container_name: phpmyadmin_sds
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: rootpass
+    ports:
+      - "8082:80"           # phpMyAdmin en http://localhost:8082
+
+
+volumes:
+  db_data:
