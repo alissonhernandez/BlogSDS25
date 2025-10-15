@@ -87,7 +87,7 @@
 
         <h2><?= $agenda3 ?></h2>
 
-        <h3><?= $hackathon ?></h3>
+        <p><?= $hackathon ?></p>
         <div class="gallery">
             <img src="/mvc_sds25/public/img/hackathon/hkt1.jpeg">
            <img src="/mvc_sds25/public/img/hackathon/hkt2.jpeg">

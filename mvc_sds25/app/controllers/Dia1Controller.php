@@ -25,7 +25,9 @@ class Dia1Controller {
         <br>Transforma la forma en que pensamos, creamos y compartimos ideas.
         <br>El reto del futuro será integrar la IA en la acción humana, combinando la imaginación de las personas con la precisión de los algoritmos.",
         "agenda3" => "Última Actividad - Hackathon, de 1:00 pm a 5:00 pm",
-        "hackathon" => "Aqui es donde los estudiantes pusieron en práctica sus conocimientos en programación y desarrollo de proyectos.",
+        "hackathon" => "Aqui es donde los estudiantes pusieron en práctica sus conocimientos en programación y desarrollo de proyectos.
+        <br>Se formaron equipos que trabajaron en la creación de soluciones tecnológicas innovadoras para diversos desafíos planteados.
+        <br>El ambiente estuvo lleno de creatividad, colaboración y aprendizaje, culminando con la presentación de los proyectos desarrollados.",
         "ganadores" => "Ganadores del Hackathon",
         "findia1" => "Asi concluye el primer dia de la SDS25",
         "banderines" => "Foto realizando banderines para la feria de logros",
