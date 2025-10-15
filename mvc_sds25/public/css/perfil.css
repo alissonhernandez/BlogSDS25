@@ -1,0 +1,43 @@
+.img-perfil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.img-perfil img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0a1b2c;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.img-perfil img:hover {
+    transform: scale(1.08);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #0a1b2c;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #222;
+}
