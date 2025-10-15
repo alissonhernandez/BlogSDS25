@@ -23,10 +23,12 @@
     <div class="img-container">
         <img src="/mvc_sds25/public/img/bienvenida/grupo.jpeg" alt="Foto en grupo">
     </div>
+
     <h2><?= $agenda1 ?></h2>
     <div class="img-container">
         <img src="/mvc_sds25/public/img/bienvenida/cesarfranco.jpeg" alt="Ing. Franco">
     </div>
+
     <h3><?= $agenda2 ?></h3>
     <p><?= $vicedecana ?></p>
     <div class="img-container">
@@ -44,7 +46,9 @@
     <div class="img-container">
         <img src="/mvc_sds25/public/img/bienvenida/karlaorellana.jpeg" alt="Presidenta ASEIS">
     </div>
+
     <h2><?= $ponencias ?></h2>
+
     <h3><?= $ponencia1 ?></h3>
     <div class="img-container">
         <img src="/mvc_sds25/public/img/ponencia1/luiscontreras.jpeg" alt="MSc. Jose Luis Contreras">
@@ -62,6 +66,7 @@
         <img src="/mvc_sds25/public/img/ponencia1/bitcoin9.jpeg">
         <img src="/mvc_sds25/public/img/ponencia1/bitcoin10.jpeg">
     </div>
+
     <h3><?= $ponencia2 ?></h3>
     <div class="img-container">
         <img src="/mvc_sds25/public/img/ponencia2/rodrigopineda.jpeg" alt="MSc. Rodrigo Pineda">
@@ -79,7 +84,9 @@
         <img src="/mvc_sds25/public/img/ponencia2/iag9.jpeg">
         <img src="/mvc_sds25/public/img/ponencia2/iag10.jpeg">
     </div>
+
     <h2><?= $agenda3 ?></h2>
+
     <h3><?= $hackathon ?></h3>
     <div class="gallery">
         <img src="/mvc_sds25/public/img/hackathon/hkt1.jpeg">
@@ -93,6 +100,7 @@
         <img src="/mvc_sds25/public/img/hackathon/hkt9.jpeg">
         <img src="/mvc_sds25/public/img/hackathon/hkt10.jpeg">
     </div>
+
     <h3><?= $ganadores ?></h3>
     <div style="text-align: center;">
         <video width="640" height="360" controls>
@@ -100,14 +108,25 @@
             Tu navegador no soporta el elemento de video
         </video>
     </div>
+
     <h2><?= $findia1 ?></h2>
+
+    <p><?= $banderines ?></p>
     <div class="img-container">
         <img src="/mvc_sds25/public/img/hackathon/banderines.jpeg" alt="trabajobanderines">
     </div>
+    
     <h3><?= $realizado ?></h3>
     <div class="img-container">
         <img src="/mvc_sds25/public/img/hackathon/alisson.jpeg" alt="Alisson Hernandez">
     </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Semana de Sistemas | UES FMO</p>
+            <a href="#">Volver arriba ↑</a>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

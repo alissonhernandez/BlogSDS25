@@ -27,7 +27,8 @@ class Dia1Controller {
         "agenda3" => "Última Actividad - Hackathon, de 1:00 pm a 5:00 pm",
         "hackathon" => "Aqui es donde los estudiantes pusieron en práctica sus conocimientos en programación y desarrollo de proyectos.",
         "ganadores" => "Ganadores del Hackathon",
-        "findia1" => "Asi concluye el primer dia de la SDS25, foto realizando banderines para la feria de logros", 
+        "findia1" => "Asi concluye el primer dia de la SDS25",
+        "banderines" => "Foto realizando banderines para la feria de logros",
         "realizado" => "Realizado por: Alisson Andrea Hernández Arias"];
 
         return $this->view("dia1", $data);
