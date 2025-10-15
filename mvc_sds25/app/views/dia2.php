@@ -61,13 +61,13 @@
         </div>
 
         <h3><?= $realizado ?></h3>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Semana de Sistemas | UES FMO</p>
-            <a href="#">Volver arriba ↑</a>
-        </div>
-    </footer>
-</div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Semana de Sistemas | UES FMO</p>
+                <a href="#">Volver arriba ↑</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
