@@ -12,9 +12,13 @@
 
         <div class="right-side">
             <nav>
-                <a href="/mvc_sds25/public/">Home</a>
                 <a href="/mvc_sds25/public/dia1">Dia 1</a>
                 <a href="/mvc_sds25/public/dia2">Dia 2</a>
+                <a href="/mvc_sds25/public/dia3">Dia 3</a>
+                <a href="/mvc_sds25/public/dia4">Dia 4</a>
+                <a href="/mvc_sds25/public/dia5">Dia 5</a>
+                <a href="/mvc_sds25/public/perfil">Perfil</a>
+                <a href="/mvc_sds25/public/visitas">Visitas</a>
             </nav>
 
             <h1><?= $proyecto ?></h1>
