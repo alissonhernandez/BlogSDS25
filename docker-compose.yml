@@ -22,8 +22,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootpass # es el usuario que tiene todos los permisos (se puede cambiar)
       MYSQL_DATABASE: blog_sds #cre auna base de datos llamada appdb
-      MYSQL_USER: appuser #crea un usuario llamado appuser
-      MYSQL_PASSWORD: apppass #usuaruo y contraseña para la base de datos
+      MYSQL_USER: root #crea un usuario llamado appuser
+      MYSQL_PASSWORD: rootpass #usuaruo y contraseña para la base de datos
     ports:
       - "3306:3306"         # Opcional exponerlo al host
     volumes:
