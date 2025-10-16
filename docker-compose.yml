@@ -8,9 +8,9 @@ services:
       dockerfile: Dockerfile
     container_name: php82-apache_blog
     ports:
-      - "8080:80"           # App en http://localhost:8080
+      - "8080:80"           
     volumes:
-      - .:/var/www/html # Tu código local en ./src
+      - .:/var/www/html 
     depends_on:
       db:
         condition: service_healthy
@@ -20,23 +20,23 @@ services:
     image: mysql:8.0
     container_name: mysql_blog
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass # es el usuario que tiene todos los permisos (se puede cambiar)
-      MYSQL_DATABASE: blog_sds #cre auna base de datos llamada appdb
-      MYSQL_USER: root #crea un usuario llamado appuser
-      MYSQL_PASSWORD: rootpass #usuaruo y contraseña para la base de datos
+      MYSQL_ROOT_PASSWORD: rootpass 
+      MYSQL_DATABASE: blog_sds
+      MYSQL_USER: root 
+      MYSQL_PASSWORD: rootpass
     ports:
-      - "3306:3306"         # Opcional exponerlo al host
+      - "3306:3306"         
     volumes:
       - db_data:/var/lib/mysql 
     healthcheck:
-      test: ["CMD-SHELL", "mysqladmin ping -h localhost -prootpass || exit 1"] # Verifica si MySQL está listo
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -prootpass || exit 1"] 
       interval: 5s
       timeout: 5s
       retries: 20
       start_period: 10s
 
 
-  phpmyadmin: # Servicio opcional para administrar MySQL visualmente
+  phpmyadmin: 
     image: phpmyadmin:latest
     container_name: phpmyadmin_blog
     depends_on:
@@ -47,7 +47,7 @@ services:
       PMA_USER: root
       PMA_PASSWORD: rootpass
     ports:
-      - "8082:80"           # phpMyAdmin en http://localhost:8082
+      - "8082:80"         
 
 
 volumes:

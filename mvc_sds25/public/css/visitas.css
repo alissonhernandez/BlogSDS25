@@ -1,0 +1,113 @@
+.visitas-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+}
+
+.visitas-container h1,
+.visitas-container h2 {
+    color: #0a1b2c;
+    margin-bottom: 25px;
+}
+
+.visitas-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; 
+    margin-bottom: 40px;
+}
+
+.visitas-container label {
+    font-weight: 700;
+    margin-bottom: 2px; 
+}
+
+.visitas-container input[type="text"],
+.visitas-container input[type="email"],
+.visitas-container textarea {
+    padding: 8px 12px; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+    resize: vertical;
+}
+
+.visitas-container textarea {
+    min-height: 80px; 
+}
+
+.visitas-container button {
+    padding: 8px 15px; 
+    max-width: 200px; 
+    background-color: #0a1b2c;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.visitas-container button:hover {
+    background-color: #0d0f11;
+}
+
+.visitas-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+.visitas-container table th,
+.visitas-container table td {
+    border: 1px solid #ccc;
+    padding: 8px 10px; 
+    text-align: left;
+}
+
+.visitas-container table th {
+    background-color: #0a1b2c;
+    color: #fff;
+    font-weight: 700;
+}
+
+.visitas-container table tr:nth-child(even) {
+    background-color: #cacacc;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+.success { background: #28a745; }  
+.error   { background: #dc3545; }  
+.warning { background: #ffc107; color: #212529; }
+
+@media(max-width: 600px) {
+    .visitas-container {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .visitas-container button {
+        width: 100%;
+        max-width: unset;
+    }
+}
