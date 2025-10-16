@@ -21,7 +21,7 @@ services:
     container_name: mysql_blog
     environment:
       MYSQL_ROOT_PASSWORD: rootpass # es el usuario que tiene todos los permisos (se puede cambiar)
-      MYSQL_DATABASE: appdb #cre auna base de datos llamada appdb
+      MYSQL_DATABASE: blog_sds #cre auna base de datos llamada appdb
       MYSQL_USER: appuser #crea un usuario llamado appuser
       MYSQL_PASSWORD: apppass #usuaruo y contraseña para la base de datos
     ports:
